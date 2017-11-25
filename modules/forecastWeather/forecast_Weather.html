@@ -1,0 +1,82 @@
+<div ng-controller="forecastWeatherController">
+    <div class="forecastWeather">
+        <h2>Forecast Weather</h2>
+    
+        <table class=" table">
+            <tr>
+                <th>Day</th>
+                <th>condition</th>
+                <th>High Temp</th>
+                <th>Low temp</th>
+                <th>Description</th>
+            </tr>
+        <tr  ng-repeat="nextDay in forecastWeather | limitTo:quantity" | ng-if="$index > 0" >
+        
+        <td>{{nextDay.day}}</td>
+        <td class="ng-cloak icon">
+                    
+                    <i ng-if="nextDay.code==0" class="wi wi-thunderstorm"></i>
+                    <i ng-if="nextDay.code==1" class="wi wi-day-storm-showers"></i>
+                    <i ng-if="nextDay.code==2" class="wi wi-day-snow-thunderstorm"></i>
+                    <i ng-if="nextDay.code==3" class="wi wi-thunderstorm"></i>
+                    <i ng-if="nextDay.code==4" class="wi wi-thunderstorm"></i>
+                    <i ng-if="nextDay.code==5" class="wi wi-day-rain"></i>
+                    <i ng-if="nextDay.code==6" class="wi wi-day-rain"></i>
+                    <i ng-if="nextDay.code==7" class="wi wi-thunderstorm"></i>
+                    <i ng-if="nextDay.code==8" class="wi wi-thunderstorm"></i>
+                    <i ng-if="nextDay.code==9" class="wi wi-thunderstorm"></i>
+                    <i ng-if="nextDay.code==10" class="wi wi-thunderstorm"></i>
+                    <i ng-if="nextDay.code==11" class="wi wi-day-storm-showers"></i>
+                    <i ng-if="nextDay.code==12" class="wi wi-day-storm-showers"></i>
+                    <i ng-if="nextDay.code==13" class="wi wi-day-storm-showers"></i>
+                    <i ng-if="nextDay.code==14" class="wi wi-thunderstorm"></i>
+                    <i ng-if="nextDay.code==15" class="wi wi-thunderstorm"></i>
+
+                    <i ng-if="nextDay.code==16" class="wi wi-thunderstorm"></i>
+                    <i ng-if="nextDay.code==17" class="wi wi-thunderstorm"></i>
+                    <i ng-if="nextDay.code==18" class="wi wi-thunderstorm"></i>
+                    <i ng-if="nextDay.code==19" class="wi wi-thunderstorm"></i>
+                    <i ng-if="nextDay.code==20" class="wi wi-day-fog"></i>
+                    <i ng-if="nextDay.code==22" class="wi wi-day-haze"></i>
+                    <i ng-if="nextDay.code==23" class="wi wi-day-windy"></i>
+                    <i ng-if="nextDay.code==24" class="wi wi-day-windy"></i>
+                    <i ng-if="nextDay.code==25" class="wi wi-thunderstorm"></i>
+                    <i ng-if="nextDay.code==26" class="wi wi-day-cloudy"></i>
+                    <i ng-if="nextDay.code==27" class="wi wi-night-alt-cloudy"></i>
+                    <i ng-if="nextDay.code==28" class="wi wi-day-cloudy"></i>
+                    <i ng-if="nextDay.code==29" class="wi wi-day-cloudy-gusts"></i>
+                    <i ng-if="nextDay.code==30" class="wi wi-night-alt-cloudy-gusts"></i>
+                    <i ng-if="nextDay.code==31" class="wi wi-night-clear"></i>
+                    <i ng-if="nextDay.code==32" class="wi wi-day-sunny"></i>
+                    <i ng-if="nextDay.code==33" class="wi wi-night-clear"></i>
+                    <i ng-if="nextDay.code==34" class="wi wi-day-sunny"></i>
+                    <i ng-if="nextDay.code==35" class="wi wi-thunderstorm"></i>
+                    <i ng-if="nextDay.code==36" class="wi wi-thunderstorm"></i>
+                    <i ng-if="nextDay.code==37" class="wi wi-thunderstorm"></i>
+                    <i ng-if="nextDay.code==38" class="wi wi-thunderstorm"></i>
+                    <i ng-if="nextDay.code==39" class="wi wi-thunderstorm"></i>
+                    <i ng-if="nextDay.code==40" class="wi wi-thunderstorm"></i>
+                    <i ng-if="nextDay.code==41" class="wi wi-thunderstorm"></i>
+                    <i ng-if="nextDay.code==42" class="wi wi-thunderstorm"></i>
+                    <i ng-if="nextDay.code==43" class="wi wi-thunderstorm"></i>
+                    <i ng-if="nextDay.code==44" class="wi wi-day-cloudy"></i>
+                    <i ng-if="nextDay.code==45" class="wi wi-thunderstorm"></i>
+                    <i ng-if="nextDay.code==46" class="wi wi-thunderstorm"></i>
+                    <i ng-if="nextDay.code==47" class="wi wi-thunderstorm"></i>
+                    <i ng-if="nextDay.code==3200" class="wi wi-thunderstorm"></i>
+
+
+
+        </td>
+        <td>{{((nextDay.high-32)*(5.0/9.0)).toFixed()}}<sup id="degreeforecast">&deg</sup><span id="unit">c</span></td>
+        <td>{{((nextDay.low-32)*(5.0/9.0)).toFixed()}}<sup id="degreeforecast">&deg</sup><span id="unit">c</span></td>
+        <td>{{nextDay.text}}</td>
+        </tr>
+        </table>
+        
+
+
+
+    </div>
+    
+</div>

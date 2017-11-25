@@ -1,0 +1,138 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    position:relative;
+    color:	rgb(255, 204, 0);
+    background:url(images/sunny.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    
+    background-position:center;
+    opacity: 0.7;
+}
+a .btn btn-primary:hover {
+    background-color:rgb(255, 204, 0);
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color:rgb(255, 204, 0);
+    border-color: rgba(49, 42, 14, 0.171); 
+    border-radius: 5px;;
+}
+
+.currentweather{
+    
+    position:relative;
+    width:100%;
+    font-size:24px;
+    font-weight: bold;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+    padding:2px;
+    font-family:Helvetica, sans-serif;
+    text-align:center;
+     z-index:1;
+     margin-bottom:2px;
+}
+.weatherconditions{
+    position:relative;
+    top:10px;
+
+}
+
+
+
+.currentweather span#description{
+    position:relative;
+   
+    padding-bottom:2px;
+    font-size:24px;
+    text-justify:justify;
+    
+    
+   
+    
+
+}
+.currentweather span#temperature{
+    position:relative;
+    
+    font-weight:60%;
+    font-size:24px;
+    z-index:5;
+}
+#degree{
+    position:relative;
+    top:-5px;
+    margin-left:-10px;
+}
+.currentweather span#unit{
+    position:relative;
+    top:-8px;
+    font-size:14px;
+    font-weight: 50%;
+    margin-left:-10px;
+}
+
+ span#currentdate{
+    
+        position:relative;
+        top:3px;
+        float:right;
+        font-weight:100%;
+        font-size:22px;
+        margin-right:5px;
+        z-index:1;
+    
+    
+    }
+.forecastWeather h2{
+    
+    padding-top:2px;
+    text-align:center;
+    z-index:-1;
+}
+#degreeforecast{
+    position:relative;
+
+}
+.forecastWeather span#unit{
+     margin-left:1px;
+    
+}
+#icon1{
+    color:red;
+    font-size:20px;
+}
+.wi {
+    font-size:12em;
+    line-height:1.15;
+  }
+  
+  .icon {
+    padding:5px;
+    font-size:2px;
+    color:	rgb(255, 204, 0);
+    
+    
+  }
+table{
+    font-size:14px;
+    color:	rgb(255, 204, 0);;
+    font-weight:bold;
+    letter-spacing:1px;
+}
+table tr:hover{
+    background-color:rgb(51, 49, 49);
+
+}
+table tr:nth-child(even) {
+    background-color: rgb(0, 26, 75);
+ }
+ table tr:nth-child(even):hover {
+    background-color:rgb(51, 49, 49);
+}

@@ -1,0 +1,38 @@
+<div ng-style="weatherBackground" class="currentweather">
+       <span id="description">{{currentWeather.weatherDescription}}</span>
+        <span id="temperature">{{celsius }} <sup id="degree">&deg</sup></span>
+        <span id="unit">c</span>
+        
+    </div>
+    <div>
+            <span id="currentdate">{{(currentWeather.currentDate).substring(0,16)}}</span>
+    </div>
+    <div class="weatherconditions">
+    <table class=" table">
+<tr>
+    <td>Sunrise</td>
+    <td>{{currentWeather.sunrise}}</td>
+</tr>
+<tr>
+        <td>Sunset</td>
+        <td>{{currentWeather.sunset}}</td>
+    </tr>
+    <tr>
+            <td>wind speed</td>
+            <td>{{currentWeather.windspeed}}</td>
+        </tr>
+        <tr>
+                <td>humidity</td>
+                <td>{{currentWeather.humidity}}</td>
+            </tr>
+
+    </table>
+    </div>
+    
+			
+		
+			
+		
+		
+		
+        </div>
